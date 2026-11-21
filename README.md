@@ -1,10 +1,8 @@
-[README.md](https://github.com/user-attachments/files/35211340/README.md)# GEP1316 Kodlama Okuryazarlığı — Kişisel Portfolyo
+# GEP1316 Kodlama Okuryazarlığı — Kişisel Portfolyo
 
 **Canlı Site (GitHub Pages):** [https://ceydakzlc.github.io/gep1316-portfolyo/](https://ceydakzlc.github.io/gep1316-portfolyo/)
 
 * **Öğrenci:** Ceyda Kızılca (Bahçeşehir Üniversitesi — Çizgi Film ve Animasyon)
-* **Ders:** GEP1316 Kodlama Okuryazarlığı · 2026-2027 Güz
-* **Öğretim Elemanı:** Öğr. Gör. Adem ÖZER
 
 ## Site Yapısı
 1. **Ana Sayfa (`index.html`):** Kısa tanıtım, illüstrasyon avatar, gezinti menüsü ve sayfa yönlendirmeleri.
