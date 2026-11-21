@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ceyda Kızılca - İletişim Formu, Gizlilik Aydınlatması ve Sosyal/Profesyonel Bağlantılar">
+  <title>İletişim | Ceyda Kızılca</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Ana içeriğe geç</a>
+
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand">
+        <span class="brand-star" aria-hidden="true">★</span> Ceyda Kızılca
+      </a>
+
+      <div class="header-controls">
+        <button type="button" class="theme-toggle" id="themeToggle" aria-pressed="false" aria-label="Karanlık modu aç veya kapat">
+          🌙 Karanlık Mod
+        </button>
+        <button type="button" class="menu-toggle" id="menuToggle" aria-controls="siteNav" aria-expanded="false" aria-label="Gezinti menüsünü aç veya kapat">
+          ☰ Menü
+        </button>
+      </div>
+
+      <nav class="site-nav" id="siteNav" aria-label="Ana gezinti menüsü">
+        <a href="index.html" class="nav-link">Ana Sayfa</a>
+        <a href="hakkimda.html" class="nav-link">Hakkımda</a>
+        <a href="projeler.html" class="nav-link">Projeler</a>
+        <a href="iletisim.html" class="nav-link active" aria-current="page">İletişim</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-banner">
+      <div class="container">
+        <span class="badge badge-sunny">★ İLETİŞİM &amp; BAĞLANTILAR</span>
+        <h1>İletişim</h1>
+        <p>Projelerim hakkında görüş bildirmek veya GitHub depolarıma ulaşmak için aşağıdaki bağlantıları ve formu kullanabilirsiniz.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+        <!-- Sosyal / Profesyonel Bağlantılar (Telefon ve Adres Bulunmaz) -->
+        <div class="contact-links-panel">
+          <a href="https://github.com/CeydaKzlc" target="_blank" rel="noopener noreferrer" class="link-card card-navy">
+            <div>
+              <span class="tag">GİTHUB PROFİLİ</span>
+              <h3>github.com/CeydaKzlc</h3>
+              <p>Tüm kod depolarım ve dönem güncellemeleri</p>
+            </div>
+            <span class="arrow" aria-hidden="true">↗</span>
+          </a>
+
+          <a href="https://github.com/CeydaKzlc/Ogrenci_Not_Hesaplayici" target="_blank" rel="noopener noreferrer" class="link-card card-blue">
+            <div>
+              <span class="tag">ÖDEV 1 REPOSU</span>
+              <h3>Ogrenci_Not_Hesaplayici</h3>
+              <p>Python &amp; Tkinter Harf Notu Hesaplayıcı</p>
+            </div>
+            <span class="arrow" aria-hidden="true">↗</span>
+          </a>
+
+          <a href="https://github.com/CeydaKzlc/gep1316-portfolyo" target="_blank" rel="noopener noreferrer" class="link-card card-violet">
+            <div>
+              <span class="tag">PORTFOLYO REPOSU</span>
+              <h3>gep1316-portfolyo</h3>
+              <p>GEP1316 Kodlama Okuryazarlığı Portfolyo Deposu</p>
+            </div>
+            <span class="arrow" aria-hidden="true">↗</span>
+          </a>
+
+          <a href="https://www.bau.edu.tr" target="_blank" rel="noopener noreferrer" class="link-card card-lime">
+            <div>
+              <span class="tag">ÜNİVERSİTE</span>
+              <h3>Bahçeşehir Üniversitesi</h3>
+              <p>Çizgi Film ve Animasyon Bölümü</p>
+            </div>
+            <span class="arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+
+        <!-- Doğrulamalı İletişim Formu -->
+        <div class="content-card">
+          <h2>Mesaj Gönder</h2>
+          <p>Geri bildirimleriniz için formu doldurabilirsiniz.</p>
+
+          <form id="contactForm" class="contact-form mt-sm" novalidate>
+            <div class="form-group">
+              <label for="senderName">Adınız Soyadınız <span aria-hidden="true">*</span></label>
+              <input type="text" id="senderName" name="senderName" autocomplete="name" placeholder="Adınız ve soyadınız" required>
+              <small class="field-error" id="nameError" role="alert"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="senderEmail">E-posta Adresiniz <span aria-hidden="true">*</span></label>
+              <input type="email" id="senderEmail" name="senderEmail" autocomplete="email" placeholder="ornek@eposta.com" required>
+              <small class="field-error" id="emailError" role="alert"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="senderSubject">Konu <span aria-hidden="true">*</span></label>
+              <select id="senderSubject" name="senderSubject" required>
+                <option value="">Bir konu seçiniz...</option>
+                <option value="proje">Proje Geri Bildirimi</option>
+                <option value="isbirligi">Oyun / Animasyon İş Birliği</option>
+                <option value="genel">Genel Mesaj</option>
+              </select>
+              <small class="field-error" id="subjectError" role="alert"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="senderMessage">Mesajınız <span aria-hidden="true">*</span></label>
+              <textarea id="senderMessage" name="senderMessage" rows="5" placeholder="En az 10 karakterlik mesajınızı yazın..." required></textarea>
+              <small class="field-error" id="messageError" role="alert"></small>
+            </div>
+
+            <button type="submit" class="btn btn-blue">Mesajı Gönder</button>
+            <p id="contactFeedback" class="demo-message" aria-live="polite"></p>
+
+            <!-- Gizlilik Aydınlatması ve Üçüncü Taraf Betik Açıklaması -->
+            <div class="privacy-notice" id="gizlilik">
+              <p>
+                <strong>Gizlilik Aydınlatması:</strong> Bu form yalnızca iletişim talebinizi doğrulamak amacıyla
+                ad, e-posta ve mesaj bilgilerinizi işler; telefon numarası veya açık adres gibi gereksiz kişisel
+                veriler toplanmaz ve verileriniz herhangi bir sunucuya kaydedilmez.
+              </p>
+              <p class="mt-xs">
+                <strong>Üçüncü Taraf Betikler:</strong> Bu web sitesinde Google Analytics, reklam pikseli veya
+                herhangi bir üçüncü taraf izleyici betiği/çerezi bulunmamaktadır; yalnızca karanlık mod tercihiniz
+                kendi tarayıcınızın yerel belleğinde (<code>localStorage</code>) saklanır.
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div>
+      
+        <p class="footer-sub">© 2026 Ceyda Kızılca — Üçüncü taraf izleyici veya reklam çerezi kullanılmamaktadır.</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/CeydaKzlc" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.bau.edu.tr" target="_blank" rel="noopener noreferrer">Bahçeşehir Üniversitesi</a>
+        <a href="#gizlilik">Gizlilik Notu</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
